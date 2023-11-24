@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-blue-400": "#4F7DF3",
+              "secondary-blue-200": "#C2D3FF",
+              "secondary-red-400": "#FF5263",
+              "neutral-gray-400": "#969696",
+              "neutral-blue-800": "#151F29",
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      src="https://kit.fontawesome.com/82ebf2dbad.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <div class="max-w-[1440px] mx-auto sm:px-16 px-8 pt-20 pb-8">
+      <div class="flex flex-col items-center justify-center">
+        <img
+          src="./images/logo.svg"
+          alt="logo"
+          class="h-[18px] object-contain"
+        />
+
+        <h1 class="text-2xl font-extralight mt-8 text-neutral-gray-400">
+          We are launching
+          <span class="font-bold text-neutral-blue-800">soon!</span>
+        </h1>
+        <p class="text-sm font-light text-neutral-blue-800 mt-4">
+          Subscribe and get notified
+        </p>
+        <form class="flex flex-col gap-2.5 w-full mt-6 px-4">
+          <input
+            type="email"
+            placeholder="Your email address..."
+            class="w-full border border-secondary-blue-200 rounded-full px-8 py-2.5 text-sm placeholder:font-light placeholder:text-secondary-blue-200"
+          />
+          <button
+            type="submit"
+            class="w-full bg-primary-blue-400 rounded-full px-8 py-2.5 text-sm text-white shadow-md shadow-secondary-blue-200"
+          >
+            Notify Me
+          </button>
+        </form>
+      </div>
+      <img
+        src="./images/illustration-dashboard.png"
+        alt="illustration"
+        class="mt-16"
+      />
+
+      <footer class="w-full text-center mt-28">
+        <ul class="flex gap-3 justify-center">
+          <li>
+            <i
+              class="fa-brands fa-facebook-f w-[32px] h-[32px] grid items-center border border-gray-200 rounded-full text-primary-blue-400"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fa-brands fa-twitter w-[32px] h-[32px] grid items-center border border-gray-200 rounded-full text-primary-blue-400"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fa-brands fa-instagram w-[32px] h-[32px] grid items-center border border-gray-200 rounded-full text-primary-blue-400"
+            ></i>
+          </li>
+        </ul>
+        <p class="text-xs text-neutral-gray-400 font-light mt-6">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
